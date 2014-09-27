@@ -1,0 +1,149 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@font-face {
+  font-family: 'hipster';
+  src: font-url('Haymaker.ttf')
+}
+.score {
+  color:red;
+  font-size:6em;
+  font-family:'hipster';
+  font-weight:bold;
+}
+
+.main-title {
+  font-family: 'hipster';
+  font-size:4em;
+}
+
+.secondary-title {
+  font-family: 'hipster';
+  font-size:2.75em;
+  width:50%;
+  border-bottom:1.5px solid black;
+  margin:auto;
+}
+
+.title {
+  font-size:2.5em;
+  font-weight:bold;
+  font-family: 'hipster';
+  border-bottom:2px solid black;
+}
+
+.results-box ul {
+  padding:1px !important;
+}
+
+.show-box {
+  border:5px double gray;
+  height:100%;
+  padding:30px 0 0 0;
+}
+
+.main-box {
+  padding-top:50px;
+  border-radius:50%;
+  height:700px !important;
+  width:700px !important;
+}
+
+.wrap {
+ margin:auto;
+ width:400px;
+ height:20px;
+}
+
+.out-of-ten {
+  margin-top:-20px
+}
+
+#obscurity {
+  float:left;
+  height:20px;
+  width:1px;
+  background-color:forestgreen;
+  color:white;
+  margin-left:12px;
+}
+
+#freshness {
+  float:left;
+  height:20px;
+  width:1px;
+  background-color:green;
+  color:white;
+  margin-left:5.5px;
+}
+
+#rating {
+  float:left;
+  height:20px;
+  width:1px;
+  background-color:darkgreen;
+  color:white;
+  margin-left:30.3px;
+}
+
+.float-left {
+  float:left;
+}
+
+.container {
+  width:800px;
+  margin:auto;
+}
+
+body {
+  margin-top:30px;
+  text-align:center;
+  /*background-image: url('http://fearlessrockprojects.org/wp-content/uploads/2013/03/background-1600-hipster-2.jpg')*/
+}
+
+html,body {
+  height:100%;
+}
+
+li {
+  list-style-type:none;
+}
+
+p {
+  line-height: 80%;
+}
+
+.main-form {
+  padding-top:30px;
+}
+
+.errorz {
+  background-color:rgb(200,0,0);
+  color:white;
+  padding-right:50px;
+}
+
+.rotate {
+  padding:10px 0 35px 0;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
